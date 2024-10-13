@@ -1,0 +1,86 @@
+.container {	
+	background: black;
+}
+
+.container {
+	color: yellow;
+}
+
+.container p{
+	color: lightblue;
+}
+.content p{
+	color: red;
+	margin: 50px;
+	padding: 30px;
+	border: 2px solid black;
+	font-size: 20px;
+}
+
+.content span{
+	color: green;
+	background: yellow;
+}
+
+.content span:nth-child(4){
+	color: purple;
+	background: whitesmoke;
+}
+
+.content span:nth-child(5){
+	width: 500px;
+	color: blue;
+	display: block;
+}
+
+#one {
+	color: blue;
+  width: 300px;
+  margin: 50px	;
+  padding: 30px;
+  border: 2px dotted;
+  background-color: lightgray;
+}
+
+#two {
+	color: green;
+	margin: 50px;
+	padding-top: initial;
+}
+
+#three {
+	color: blue;
+	margin: 50px;
+	padding-bottom: initial;
+}
+
+#four {
+	color: purple;
+	margin: 50px;
+	padding-left: initial;
+}
+
+#five {
+	color: orange;
+	margin: 50px;
+	padding: 50px;
+	padding-right: initial;
+	width: 200px;
+}
+
+#six {
+	color: white;
+	background: darkblue;
+	margin: 0;
+  padding: 0;
+}
+
+#seven {
+	color: blue;
+	background: lightblue;
+	list-style: none;
+	width: 300px;
+}
+#seven p{
+	color: purple;
+}
