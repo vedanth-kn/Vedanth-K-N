@@ -1,15 +1,32 @@
-p {
+.container {
 	border: 1px solid;
 	margin: 30px;
 	padding: 50px;
 	font-size: 30px;
 }
 
-.parent {
+.parent1 {
 	width: 300px;
 	height: 300px;
 	background: gray;
-	position: relative;
+	position: absolute;
+}
+
+.parent2 {
+	width: 300px;
+	height: 300px;
+	background: gray;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.parent3 {
+	width: 300px;
+	height: 300px;
+	right: 8px;
+	background: gray;
+	position: absolute;
 }
 
 .child1 {
@@ -30,7 +47,7 @@ p {
 	bottom: 0;
 }
 
-.parent p {
+.content p {
 	border: none;
 	font-size: 20px;
 	padding: 10px;
