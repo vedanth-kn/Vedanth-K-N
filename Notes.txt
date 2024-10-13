@@ -40,3 +40,22 @@
 - absolute 
 
 * Flex
+- display : flex
+
+* CSS
+- justify-content :left or right or center
+- align-items : left or right or center
+
+
+git branch -- list down all branches
+
+//create new branch
+git branch BRANCH_NAME
+git checkout BRANCH_NAME
+git branch -- * should appear before newly created branch
+
+//Push changes to repository, ensure you are on respective branch
+git status 
+git add .
+git commit -m "COMMIT_MASSEGE"
+git push origin BRANCH_NAME"
