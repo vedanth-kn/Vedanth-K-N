@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>V Mart</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contect</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="singup">
+                <h2>SIGN UP</h2>
+                <ul>
+                    <li>
+                <label>First Name<input type="text" id="fname"></label>
+                <span class="error" id="first-name-error-required">This field is required</span>
+                <span class="error" id="first-name-error-length">Must be more than 5 characters</span>
+            </li>
+            <li>
+                <label>Last Name<input type="text" id="lname"></label>
+                <span class="error" id="last-name-error-required">This field is required</span>
+                <span class="error" id="last-name-error-length">Must be more than 5 characters</span>
+            </li>
+            <li>
+                <label>E-Mail<input type="email" id="email"></label>
+                <span class="error" id="email-error-required">This field is required</span>
+                <span class="error" id="email-error-format">Please enter a valid email</span>
+            </li>
+            <li>
+                <label>Password<input type="password" id="password"></label>
+                <span class="error" id="password-error-required">This field is required</span>
+                <span class="error" id="password-error-length">Must be at least 6 characters</span>
+            </li>
+            <li>
+                <label>Confirm Password<input type="password" id="confpass"></label>
+                <span class="error" id="confirm-password-error-required">This field is required</span>
+                <span class="error" id="confirm-password-error-match">Passwords do not match</span>
+            </li>
+                </ul>
+                <button class="btn">CREATE ACCOUNT</button>
+                <span>Already have an account?</span>
+                <a href="login.html">Login here</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
