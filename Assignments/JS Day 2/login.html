@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a class="title" href="index.html">V Mart</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contect</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="login">
+                <form action="" onsubmit="fnValidateLoginForm(event)">
+                    <div class="icon">
+                        <img src="icons/login.png" alt="User Icon">
+                    </div>
+                    <h2>LOGIN</h2>
+                    <ul>
+                        <li>
+                            <img src="icons/user.png" alt="First Name Icon" class="icon">
+                            <label>Username<input type="text" value="" name="username" placeholder="Enter your Username"></label>
+                            <span class="error" id="uname-error-required">This field is required</span>
+                        </li>
+                        <li>
+                            <img src="icons/password.png" alt="First Name Icon" class="icon">
+                            <label>Passward<input type="password" value="" name="password" placeholder="Enter your Passward"></label>
+                            <span class="error" id="password-error-required">This field is required</span>
+                        </li>
+                    </ul>
+                    <button class="btn">LOGIN</button>
+                    <span>Don't have an account?</span>
+                    <a href="signup.html">Singup here</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
