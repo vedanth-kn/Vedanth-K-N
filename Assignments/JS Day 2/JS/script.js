@@ -1,19 +1,3 @@
-function singup() {
-    console.log("Called")
-    let fname = document.getElementById('fname').value
-    let lname = document.getElementById('lname').value
-    let email = document.getElementById("email").value
-    let pass = document.getElementById("password").value;
-    let confpass = document.getElementById("confpass").value;
-
-    if ((fname.length >= 5) && (lname.length >= 5)) {
-        console.log("Success")   
-    }
-    else {
-        console.log("Falide")
-    }
-}
-
 function fnValidateSignupForm(e) {
     e.preventDefault();
     let formData = e.target;
@@ -26,17 +10,36 @@ function fnValidateSignupForm(e) {
     let EmailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     let PasswordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-    if(!fname) {
-        document.getElementsByClassName("error2")[0].style.display="none"
-        document.getElementsByClassName("error")[0].style.display="block"
-    }
-    else if (!(fname.length>4)) {
-        document.getElementsByClassName("error")[0].style.display="none"
-        document.getElementsByClassName("error2")[0].style.display="block"
-    }
-    let validateFname = fname.length > 4 ? true : false;
-    let validateLname = lname.length > 4 ? true : false;
-    let validateEmail = EmailPattern.test(email);
+    // First Name validation
+    document.getElementById("fname-error-required").style.display = fname ? "none" : "block";
+    document.getElementById("fname-error-length").style.display = (fname && fname.length < 5) ? "block" : "none";
+    
+    // Last Name validation
+    document.getElementById("lname-error-required").style.display = lname ? "none" : "block";
+    
+    // Email validation
+    document.getElementById("email-error-required").style.display = email ? "none" : "block";
+    document.getElementById("email-error-format").style.display = (email && !EmailPattern.test(email)) ? "block" : "none";
+    
+    // Password validation
+    document.getElementById("password-error-required").style.display = password ? "none" : "block";
+    document.getElementById("password-error-length").style.display = (password && password.length < 8) ? "block" : "none";
+    document.getElementById("password-error-strong").style.display = (password && !PasswordPattern.test(password)) ? "block" : "none";
 
+    // Confirm Password validation
+    document.getElementById("confpassword-error-required").style.display = confpass ? "none" : "block";
+    document.getElementById("confpassword-error-match").style.display = (confpass && password !== confpass) ? "block" : "none";
+}
 
+function   fnValidateLoginForm(e) {
+    e.preventDefault();
+    let formData = e.target;
+    let uname = formData.username.value;
+    let password = formData.password.value;
+
+    // User Name validation
+    document.getElementById("uname-error-required").style.display = uname ? "none" : "block";
+
+    // Password validation
+    document.getElementById("password-error-required").style.display = password ? "none" : "block";
 }
