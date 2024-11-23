@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a class="title" href="index.html">V Mart</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contect</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="singup">
+                <form action="" onsubmit="fnValidateSignupForm(event)">
+                    <h2>SIGN UP</h2>
+                    <ul>
+                        <li>
+                            <img src="icons/user.png" alt="First Name Icon" class="icon">
+                            <label>First Name</label>
+                            <input type="text" value="" name="fname" placeholder="Enter your first name">
+                            <span class="error" id="fname-error-required">This field is required</span>
+                            <span class="error" id="fname-error-length">Must be more than 5 characters</span>
+                        </li>
+                        <li>
+                            <img src="icons/user.png" alt="First Name Icon" class="icon">
+                            <label>Last Name<input type="text" value="" name="lname" placeholder="Enter your last name"></label>
+                            <span class="error" id="lname-error-required">This field is required</span>
+                            <span class="error" id="lname-error-length">Must be more than 1 characters</span>
+                        </li>
+                        <li>
+                            <img src="icons/email.png" alt="First Name Icon" class="icon">
+                            <label>E-Mail<input type="email" value="" name="email" placeholder="Enter your email"></label>
+                            <span class="error" id="email-error-required">This field is required</span>
+                            <span class="error" id="email-error-format">Please enter a valid email</span>
+                        </li>
+                        <li>
+                            <img src="icons/password.png" alt="First Name Icon" class="icon">
+                            <label>Password<input type="password" value="" name="password" placeholder="Set the Passward"></label>
+                            <span class="error" id="password-error-required">This field is required</span>
+                            <span class="error" id="password-error-length">Must be at least 8 characters</span>
+                            <span class="error" id="password-error-strong">Must be contain atlest one Capital and Small Letter, spetial character and numeric character</span>
+                        </li>
+                        <li>
+                            <img src="icons/password.png" alt="First Name Icon" class="icon">
+                            <label>Confirm Password<input type="password" value="" name="confpass" placeholder="Enter password again"></label>
+                            <span class="error" id="confpassword-error-required">This field is required</span>
+                            <span class="error" id="confpassword-error-match">Passwords not matching</span>
+                        </li>
+                    </ul>
+                    <button class="btn">CREATE ACCOUNT</button>
+                    <span>Already have an account?</span>
+                    <a href="login.html">Login here</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
